@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using Photon.Realtime;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,21 +26,19 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         instance = this;
-        Initialize();
+        InitializeAll();
     }
 
-    public void Initialize()
+    public void InitializeAll()
     {
         InitializeBall();
-        Instantiate(playerBluePrefab, spawnBlue.position, Quaternion.identity);
-        Instantiate(playerRedPrefab, spawnRed.position, Quaternion.identity);
-    }
-
-    public void DestroyAll()
-    {
-        DestroyImmediate(ballPrefab);
-        DestroyImmediate(playerBluePrefab);
-        DestroyImmediate(playerRedPrefab);
+        foreach (Player player in PhotonNetwork.PlayerList)
+        {
+            if (player.IsMasterClient)
+                Instantiate(playerBluePrefab, spawnBlue.position, Quaternion.identity);
+            else
+                Instantiate(playerRedPrefab, spawnRed.position, Quaternion.identity);
+        }
     }
 
     public void InitializeBall()
