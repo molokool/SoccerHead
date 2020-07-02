@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 1346765947469028303}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: Head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -217,7 +217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1346765947588577558}
-  - component: {fileID: 1346765947588577553}
+  - component: {fileID: 1555763537915040933}
   - component: {fileID: 1346765947588577559}
   - component: {fileID: 1346765947588577552}
   - component: {fileID: 2889793375618061202}
@@ -247,7 +247,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1346765947588577553
+--- !u!50 &1555763537915040933
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -299,13 +299,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2494490748e20a343adff237a536a3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   shootSpeed: 500
   jumpForce: 10
   isGrounded: 0
   isRight: 1
   foot: {fileID: 1346765947747468570}
-  PV: {fileID: 0}
+  PV: {fileID: 2889793375618061202}
 --- !u!114 &2889793375618061202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 1346765947747468567}
   m_Layer: 0
   m_Name: Foot
-  m_TagString: Untagged
+  m_TagString: Foot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -440,7 +440,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06354905, y: -0.08873237}
+  m_Offset: {x: 0.065311834, y: -0.08873237}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 1}
@@ -451,7 +451,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1270981, y: 0.16253524}
+  m_Size: {x: 0.13062367, y: 0.16253524}
   m_EdgeRadius: 0
 --- !u!114 &1346765947747468567
 MonoBehaviour:

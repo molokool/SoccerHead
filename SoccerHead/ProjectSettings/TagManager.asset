@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - GoalRed
   - GoalBlue
+  - Obstacle
+  - Foot
+  - Head
   layers:
   - Default
   - TransparentFX

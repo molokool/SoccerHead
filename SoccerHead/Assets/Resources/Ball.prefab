@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2460390610453154754}
   - component: {fileID: -803586040141289513}
   - component: {fileID: 6827903151781000888}
-  - component: {fileID: 8951578429460129433}
+  - component: {fileID: -4853984515418820911}
   - component: {fileID: 5324911003650483460}
   m_Layer: 0
   m_Name: Ball
@@ -136,7 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78c4b82039e68743b060c24d3d317f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: 300
+  forceBounce: 15
+  forceShoot: 150
 --- !u!114 &6827903151781000888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,12 +156,12 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 8951578429460129433}
+  - {fileID: -4853984515418820911}
   - {fileID: 5324911003650483460}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &8951578429460129433
+--- !u!114 &-4853984515418820911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
