@@ -244,7 +244,6 @@ GameObject:
   - component: {fileID: 2920504282325958067}
   - component: {fileID: -2038754768328755474}
   - component: {fileID: 4861996499589149973}
-  - component: {fileID: 155108467331029898}
   m_Layer: 0
   m_Name: Mbappe
   m_TagString: Untagged
@@ -329,7 +328,6 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 4861996499589149973}
-  - {fileID: 155108467331029898}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -348,22 +346,6 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
---- !u!114 &155108467331029898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7679870505561529303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e7cb724808c322458aa4d15f5035fa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 0
-  m_TeleportEnabled: 0
-  m_TeleportIfDistanceGreaterThan: 3
 --- !u!1 &7853042670306420552
 GameObject:
   m_ObjectHideFlags: 0

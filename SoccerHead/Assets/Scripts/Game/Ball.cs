@@ -49,7 +49,6 @@ public class Ball : MonoBehaviour
     {
         float posX = 20 - 1.5f * goalRed;
         transform.position = new Vector3(posX, 14, 0);
-        Destroy(GetComponent<PhotonRigidbody2DView>());
         Destroy(rb);
         Destroy(GetComponent<PhotonTransformView>());
         Destroy(GetComponent<PhotonView>());
@@ -59,7 +58,6 @@ public class Ball : MonoBehaviour
     {
         float posX = -20 + 1.5f * goalBlue;
         transform.position = new Vector3(posX, 14, 0);
-        Destroy(GetComponent<PhotonRigidbody2DView>());
         Destroy(rb);
         Destroy(GetComponent<PhotonTransformView>());
         Destroy(GetComponent<PhotonView>());
