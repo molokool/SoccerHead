@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Photon.Pun;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -46,6 +47,7 @@ public class Ball : MonoBehaviour
 
     private void MoveBallToCountRed()
     {
+        Destroy(GetComponent<PhotonRigidbody2DView>());
         Destroy(rb);
         float posX = 20 - 1.5f * goalRed;
         transform.position = new Vector3(posX, 14, 0);
@@ -53,6 +55,7 @@ public class Ball : MonoBehaviour
 
     private void MoveBallToCountBlue()
     {
+        Destroy(GetComponent<PhotonRigidbody2DView>());
         Destroy(rb);
         float posX = -20 + 1.5f * goalBlue;
         transform.position = new Vector3(posX, 14, 0);

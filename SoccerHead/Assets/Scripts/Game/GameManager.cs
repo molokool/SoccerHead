@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void InitializeBall()
     {
-        PhotonNetwork.Instantiate(ballPrefab.name, spawnBall.position, Quaternion.identity);
+        if(PhotonNetwork.IsMasterClient)
+            PhotonNetwork.Instantiate(ballPrefab.name, spawnBall.position, Quaternion.identity);
     }
 }
