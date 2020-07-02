@@ -32,13 +32,10 @@ public class GameManager : MonoBehaviour
     public void InitializeAll()
     {
         InitializeBall();
-        foreach (Player player in PhotonNetwork.PlayerList)
-        {
-            if (player.IsMasterClient)
-                Instantiate(playerBluePrefab, spawnBlue.position, Quaternion.identity);
-            else
-                Instantiate(playerRedPrefab, spawnRed.position, Quaternion.identity);
-        }
+        if (PhotonNetwork.IsMasterClient)
+            PhotonNetwork.Instantiate(playerBluePrefab.name, spawnBlue.position, Quaternion.identity);
+        else
+            PhotonNetwork.Instantiate(playerRedPrefab.name, spawnRed.position, Quaternion.identity);
     }
 
     public void InitializeBall()

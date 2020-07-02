@@ -309,6 +309,7 @@ MonoBehaviour:
   isGrounded: 0
   isRight: -1
   foot: {fileID: 2136313811808968801}
+  PV: {fileID: 0}
 --- !u!114 &-2038754768328755474
 MonoBehaviour:
   m_ObjectHideFlags: 0
