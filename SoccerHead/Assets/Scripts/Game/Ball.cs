@@ -47,17 +47,21 @@ public class Ball : MonoBehaviour
 
     private void MoveBallToCountRed()
     {
-        Destroy(GetComponent<PhotonRigidbody2DView>());
-        Destroy(rb);
         float posX = 20 - 1.5f * goalRed;
         transform.position = new Vector3(posX, 14, 0);
+        Destroy(GetComponent<PhotonRigidbody2DView>());
+        Destroy(rb);
+        Destroy(GetComponent<PhotonTransformView>());
+        Destroy(GetComponent<PhotonView>());
     }
 
     private void MoveBallToCountBlue()
     {
-        Destroy(GetComponent<PhotonRigidbody2DView>());
-        Destroy(rb);
         float posX = -20 + 1.5f * goalBlue;
         transform.position = new Vector3(posX, 14, 0);
+        Destroy(GetComponent<PhotonRigidbody2DView>());
+        Destroy(rb);
+        Destroy(GetComponent<PhotonTransformView>());
+        Destroy(GetComponent<PhotonView>());
     }
 }
